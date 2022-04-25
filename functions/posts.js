@@ -1,18 +1,17 @@
-const { createClient } = require("@astrajs/collections")
+const { createClient } = require("@astrajs/collections");
 
-const collection = "tktkposts"
+const collection = "tktkposts";
 
 exports.handler = async function (event, context, callback) {
   const astraClient = await createClient({
     astraDatabaseId: process.env.ASTRA_DB_ID,
     astraDatabaseRegion: process.env.ASTRA_DB_REGION,
-    username: process.env.ASTRA_DB_USERNAME,
-    password: process.env.ASTRA_DB_PASSWORD,
-  })
+    applicationToken: process.env.ASTRA_DB_APPLICATION_TOKEN,
+  });
 
   const users = astraClient
-    .namespace(process.env.ASTRA_DB_KEYSPACE)
-    .collection(collection);
+    ?.namespace(process.env.ASTRA_DB_KEYSPACE)
+    ?.collection(collection);
 
   try {
     const res = await users.find({});
@@ -25,6 +24,6 @@ exports.handler = async function (event, context, callback) {
     return {
       statusCode: 500,
       body: JSON.stringify(e),
-    }
+    };
   }
-}
+};

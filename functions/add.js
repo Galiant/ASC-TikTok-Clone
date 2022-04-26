@@ -1,6 +1,6 @@
 const faker = require("faker");
 const { createClient } = require("@astrajs/collections");
-let id = faker.random.uuid();
+let id = faker.datatype.uuid();
 const collection = "tktkposts";
 
 exports.handler = async function (event, context, callback) {

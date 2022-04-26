@@ -19,7 +19,7 @@ This will run as if you deployed your app onto Netlify (but in dev mode). It wil
 - Stargate documentation (https://stargate.io/)
 - DataStax https://www.datastax.com/
 - React
-- Netlify
+- Netlify (deployed and live on https://asc-tiktok-app.netlify.app/)
   (JAMStack)
 
 #### This Repo is created per [Ania Kubow](https://github.com/kubowania) tutorial [I built a Tik Tok App in React](https://youtu.be/IATOicvih5A)

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "removeComments": true,
+    "allowJs": false,
+    "allowUnreachableCode": false,
+    "strict": true
+  },
+  "lib": ["esnext"]
+}

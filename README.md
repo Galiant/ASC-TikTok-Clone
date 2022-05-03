@@ -1,25 +1,27 @@
-# AND SHE CAN Tik-Tok App
+# AND She Can - TikTok App
 
-## To start this app:
+## To run app locally:
 
-### `npm i`
+### Frontend
 
-This will install the packages you need
+- change active directory to frontend `cd frontend`
+- `npm install` to install the frontend packages
+- run `npm start`
 
-### fill out the `.env` file
+### Backend
 
-Fill this out by signing up to [DataStax](www.datastax.com) and getting the information you need as per the `.env.sample` template.
-
-### `netlify dev`
-
-This will run as if you deployed your app onto Netlify (but in dev mode). It will also use your .env content.
+- change active directory to backend `cd backend`
+- `npm install` to install the frontend packages
+- create `.env` file and add environment variables as per `.env.sample` file
+- to run locally it is enough to add `DB_URL` and `TOKEN_SECRET` to `.env` file
+- run `npm run dev`
 
 ### The app is built using:
 
-- Stargate documentation (https://stargate.io/)
-- DataStax https://www.datastax.com/
+- Atlas MongoDB
 - React
+- NodeJS (Express)
+- Typescript
+- React Redux
 - Netlify (deployed and live on https://asc-tiktok-app.netlify.app/)
   (JAMStack)
-
-#### This Repo is created per [Ania Kubow](https://github.com/kubowania) tutorial [I built a Tik Tok App in React](https://youtu.be/IATOicvih5A)

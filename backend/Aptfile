@@ -1,3 +1,1 @@
-apt software-properties-common
-add-apt-repository ppa:stebbins/handbrake-releases
-apt handbrake-cli handbrake-gtk
+handbrake-cli handbrake-gtk

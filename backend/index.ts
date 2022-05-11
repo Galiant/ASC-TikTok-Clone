@@ -69,4 +69,6 @@ app.use("*", () => {
 // error handler
 app.use(handleError);
 
-server.listen(process.env.PORT || 5000, () => console.log("Server started"));
+const port = process.env.PORT || 5000
+
+server.listen(port, () => console.log(`Server started on localhost:${port}`));

@@ -338,9 +338,6 @@ export default function EditProfile() {
 							</div>
 						</div>
 					</section>
-					<div className="made-with">
-						<p>Made with ❤️ by AND She Can</p>
-					</div>
 				</div>
 			)}
 		</PageWithNavbar>

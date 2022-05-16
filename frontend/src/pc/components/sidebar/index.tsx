@@ -171,9 +171,6 @@ export default function Sidebar() {
 						</div>
 					</div>
 				)}
-				<div className="made-with">
-					<p>Made with ❤️ by AND She Can</p>
-				</div>
 			</aside>
 		</div>
 	);

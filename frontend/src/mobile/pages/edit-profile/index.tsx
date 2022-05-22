@@ -337,7 +337,7 @@ export default function EditProfile() {
 						</div>
 					</section>
 					<div className="made-with">
-						<p>Made with by Shrutanten</p>
+						<p>Made by Shrutanten</p>
 						<a
 							href="https://github.com/soft-coded"
 							target="_blank"

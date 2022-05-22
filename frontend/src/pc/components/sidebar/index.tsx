@@ -1,17 +1,16 @@
-import { useEffect, useCallback, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
-
-import "./sidebar.scss";
+import { useCallback, useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import LoadingSpinner from "../../../common/components/loading-spinner";
+import constants from "../../../common/constants";
 import { useAppDispatch, useAppSelector } from "../../../common/store";
 import { authModalActions } from "../../../common/store/slices/auth-modal-slice";
-import { joinClasses } from "../../../common/utils";
 import { notificationActions } from "../../../common/store/slices/notification-slice";
+import { joinClasses } from "../../../common/utils";
 import {
 	fetchFollowing,
 	fetchSuggested
 } from "../../store/slices/sidebar-slice";
-import constants from "../../../common/constants";
-import LoadingSpinner from "../../../common/components/loading-spinner";
+import "./sidebar.scss";
 
 export default function Sidebar() {
 	const dispatch = useAppDispatch();
@@ -171,6 +170,16 @@ export default function Sidebar() {
 						</div>
 					</div>
 				)}
+				<div className="made-with">
+					<p>Made by Shrutanten</p>
+					<a
+						href="https://github.com/soft-coded"
+						target="_blank"
+						rel="noreferrer"
+					>
+						github: @soft-coded
+					</a>
+				</div>
 			</aside>
 		</div>
 	);

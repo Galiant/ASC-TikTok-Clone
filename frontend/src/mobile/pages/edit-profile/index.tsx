@@ -1,20 +1,18 @@
-import { useEffect, useState, useCallback } from "react";
 import { useFormik } from "formik";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import * as yup from "yup";
-
-import PageWithNavbar from "../../components/page-with-navbar";
-import "./edit-profile.scss";
-import { UserData } from "../../../common/types";
-import Input from "../../../common/components/input-field";
-import FullscreenSpinner from "../../../common/components/fullscreen-spinner";
-import { errorNotification } from "../../helpers/error-notification";
-import { useAppDispatch, useAppSelector } from "../../../common/store";
 import { getCustom, updateUser } from "../../../common/api/user";
-import constants from "../../../common/constants";
-import { joinClasses } from "../../../common/utils";
-import { authActions } from "../../../common/store/slices/auth-slice";
-import { useMemo } from "react";
+import FullscreenSpinner from "../../../common/components/fullscreen-spinner";
+import Input from "../../../common/components/input-field";
 import LoadingSpinner from "../../../common/components/loading-spinner";
+import constants from "../../../common/constants";
+import { useAppDispatch, useAppSelector } from "../../../common/store";
+import { authActions } from "../../../common/store/slices/auth-slice";
+import { UserData } from "../../../common/types";
+import { joinClasses } from "../../../common/utils";
+import PageWithNavbar from "../../components/page-with-navbar";
+import { errorNotification } from "../../helpers/error-notification";
+import "./edit-profile.scss";
 
 function usesDarkTheme(): boolean {
 	let stored: any = localStorage.getItem("usesDarkTheme");
@@ -338,6 +336,16 @@ export default function EditProfile() {
 							</div>
 						</div>
 					</section>
+					<div className="made-with">
+						<p>Made by Shrutanten</p>
+						<a
+							href="https://github.com/soft-coded"
+							target="_blank"
+							rel="noreferrer"
+						>
+							github: @soft-coded
+						</a>
+					</div>
 				</div>
 			)}
 		</PageWithNavbar>
